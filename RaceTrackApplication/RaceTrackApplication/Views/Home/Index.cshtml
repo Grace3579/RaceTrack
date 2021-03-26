@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Race Track Application Home Page";
+}
+@*<script src="jquery-3.5.1.min.js"></script>*@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<div class="text-center">
+    <h1 class="display-4">Welcome To Race Track Application</h1>
+    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+
+</div>
+<form id="page">
+    <div class="row">
+        <div class="form-group row">
+            <label for="TypeOfVehicle" class="col-4 col-form-label">Type Of Vehicle</label>
+            <select id="TypeOfVehicle" multiple class="form-control limited-size"
+                    data-bind="TypeOfVehicle">
+                <option value="0">Select</option>
+                <option value="Car">Car</option>
+                <option value="Truck">Truck</option>
+            </select>
+        </div>
+        <div class="form-group row">
+            <label for="TowStrap" class="col-4 col-form-label">Tow Strap on vehicle</label>
+            <div class="col-8">
+                <input id="TowStrap" type="text" class="form-control limited-size" autocomplete='off' data-bind="value: TowStrap" placeholder="All" />
+            </div>
+        </div>
+        <div class="form-group row" id="CarType">
+            <label for="Lift" class="col-4 col-form-label">Lift</label>
+            <div class="col-8">
+                <input id="Lift" type="text" class="form-control limited-size" autocomplete='off' data-bind="value: Lift" placeholder="All" />
+            </div>
+        </div>
+        <div class="form-group row" id="TruckType">
+            <label for="TireWear" class="col-4 col-form-label">Tire Wear</label>
+            <div class="col-8">
+                <input id="TireWear" type="text" class="form-control limited-size" autocomplete='off' data-bind="value: Tirewear" placeholder="All" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group row">
+            <label for="Make" class="col-4 col-form-label">Make</label>
+            <div class="col-8">
+                <input id="Make" type="text" class="form-control limited-size" autocomplete='off' data-bind="value: Make" placeholder="All" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Model" class="col-4 col-form-label">Model</label>
+            <div class="col-8">
+                <input id="Model" type="text" class="form-control limited-size" autocomplete='off' data-bind="value: Model" placeholder="All" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group row">
+            <label for="Color" class="col-4 col-form-label">Color</label>
+            <div class="col-8">
+                <select id="Color" multiple class="form-control limited-size"
+                        data-bind="Color">
+                    <option value="-1">Select</option>
+                    <option value="0">White</option>
+                    <option value="1">Black</option>
+                    <option value="2">Red</option>
+                    <option value="3">Grey</option>
+                    <option value="4">Brown</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Price" class="col-4 col-form-label">Price</label>
+            <div class="col-8">
+                <input id="Price" type="text" class="form-control limited-size" step="0" autocomplete='off' data-bind="value: Price" placeholder="All" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group row">
+            <label for="Speed" class="col-4 col-form-label">Speed</label>
+            <div class="col-8">
+                <input id="Speed" type="text" class="form-control limited-size" autocomplete='off' data-bind="value: Speed" placeholder="All" />
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div id="divRaceTrackTable"></div>
+    </div>
+</form>
+
+@section scripts {
+    @*@Scripts.Render("~/Scripts/RaceTrack")*@
+    <script>
+        $(document).ready(function () {
+
+            var rawModel = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+
+            var raceTrackViewModel = new RaceTrackViewModel(rawModel);
+
+            ko.applyBindings(raceTrackViewModel, document.getElementById('Page'));
+
+            raceTrackViewModel.InitView();
+            raceTrackViewModel.DoUpdate();
+
+
+        });
+
+    </script>
+}

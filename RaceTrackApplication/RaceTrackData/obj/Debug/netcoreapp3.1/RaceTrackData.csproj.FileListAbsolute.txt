@@ -1,0 +1,12 @@
+G:\G Drive Data\RaceTrackApp\RaceTrackApplication\RaceTrackData\bin\Debug\netcoreapp3.1\RaceTrackData.deps.json
+G:\G Drive Data\RaceTrackApp\RaceTrackApplication\RaceTrackData\bin\Debug\netcoreapp3.1\RaceTrackData.dll
+G:\G Drive Data\RaceTrackApp\RaceTrackApplication\RaceTrackData\bin\Debug\netcoreapp3.1\RaceTrackData.pdb
+G:\G Drive Data\RaceTrackApp\RaceTrackApplication\RaceTrackData\obj\Debug\netcoreapp3.1\RaceTrackData.csprojAssemblyReference.cache
+G:\G Drive Data\RaceTrackApp\RaceTrackApplication\RaceTrackData\obj\Debug\netcoreapp3.1\RaceTrackData.AssemblyInfoInputs.cache
+G:\G Drive Data\RaceTrackApp\RaceTrackApplication\RaceTrackData\obj\Debug\netcoreapp3.1\RaceTrackData.AssemblyInfo.cs
+G:\G Drive Data\RaceTrackApp\RaceTrackApplication\RaceTrackData\obj\Debug\netcoreapp3.1\RaceTrackData.csproj.CoreCompileInputs.cache
+G:\G Drive Data\RaceTrackApp\RaceTrackApplication\RaceTrackData\obj\Debug\netcoreapp3.1\RaceTrackData.dll
+G:\G Drive Data\RaceTrackApp\RaceTrackApplication\RaceTrackData\obj\Debug\netcoreapp3.1\RaceTrackData.pdb
+G:\G Drive Data\RaceTrackApp\RaceTrackApplication\RaceTrackData\bin\Debug\netcoreapp3.1\RaceTrackData.runtimeconfig.json
+G:\G Drive Data\RaceTrackApp\RaceTrackApplication\RaceTrackData\bin\Debug\netcoreapp3.1\RaceTrackData.runtimeconfig.dev.json
+G:\G Drive Data\RaceTrackApp\RaceTrackApplication\RaceTrackData\obj\Debug\netcoreapp3.1\RaceTrackData.genruntimeconfig.cache
