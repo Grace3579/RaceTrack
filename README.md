@@ -1,5 +1,5 @@
 # Race Track Application
-Race Track application is developed in C#, ASP.Net Core MVC, KnockoutJS, jQuery, NewtonsoftJson, Datatables.net, Sql Server, Entity Framework, Linq to Sql, xUnit Test using Moq
+Race Track application is developed in C#, ASP.Net Core MVC, KnockoutJS, jQuery, NewtonsoftJson, Datatables.net, Sql Server, Entity Framework, Linq to Sql, xUnit Test using Moq, HTML5, CSS3
 
 1. Proper utilization of Dependency Injection
 2. Code-first Entity Framework (Microsoft SQL Server)
