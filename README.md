@@ -16,7 +16,7 @@ Composition doesn't make sense here because there is not has relationship betwee
 7. Utilize AJAX to present an always up-to-date listing of vehicles on the track
 8. Write unit tests to prove the following business requirements
 
-The following set of business requirements should help you demonstrate the items
+The following set of business requirements demonstrate the items
 listed above:
 1. Present an always up-to-date listing of vehicles on the race track (Utilizing AJAX)
 2. Present a single form to add vehicles to the race track. (Utilize a Type drop-down
@@ -31,3 +31,5 @@ Truck Inspections:
 Car Inspections:
 1. Tow strap on the vehicle
 2. Less than 85% tire wear
+
+This is the initial version, would need to update/ammend to include all above cases.
